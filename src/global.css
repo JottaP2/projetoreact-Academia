@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+}
+
+body{
+    background: #0E0C15;
+}
+
+:root {
+    --white: #fff;
+    --orange-100: #F76604;
+    --marinho-100: #1B182B;
+    --marinho-200: #0E0C15;
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+body, input, textarea, button{
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-style: 1rem;
+
+}
