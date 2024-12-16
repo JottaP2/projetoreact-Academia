@@ -1,0 +1,28 @@
+header{
+    display: flex;
+    flex-direction: column;
+}
+
+.nav{
+    padding: 4rem;
+    width: 45vh;
+    height: 100vh;
+    background: var(--marinho-100);
+}
+
+.cover{
+    margin-bottom: 3rem;
+    height: auto;
+    width: 200px;
+}
+
+header a{
+    line-height: 2.5rem;
+    text-decoration: none;
+}
+
+.btn{
+    display: flex;
+    justify-content: center;
+    margin-top: 20rem;
+}
