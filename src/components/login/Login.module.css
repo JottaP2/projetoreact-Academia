@@ -1,3 +1,5 @@
+
+
 aside {
     display: flex;
     justify-content: center;
@@ -20,10 +22,10 @@ aside {
     justify-content: center;
     align-items: center;
     padding: 5rem 2rem;
+    border-radius: 2rem;
     background: var(--marinho-100);
     flex-direction: column;
     align-items: center;
-    border-radius: 10px;
 }
 
 
@@ -41,7 +43,7 @@ input {
     text-decoration: none;
     margin-bottom: 10px;
     border: none;
-    background: #0E0C15;
+    background: hsl(253, 27%, 6%);
 }
 
 strong{
@@ -54,7 +56,7 @@ strong{
     margin-bottom: 20px;
 }
 
-button {
+.loginbutton{
     padding: 0.70rem 6.9rem;
     border: none;
     border-radius: 12px;

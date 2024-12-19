@@ -60,10 +60,7 @@ export function Login() {
               value={values.password}
             />
           </div>
-          <button
-            type="submit"
-            className="user-login__submit-button"
-            rounded="true"
+          <button className={styles.loginbutton} type="submit"  rounded="true"
           >
             Login
           </button>

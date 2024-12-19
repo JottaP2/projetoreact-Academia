@@ -1,0 +1,43 @@
+main {
+    overflow: hidden;
+    height: 100vh; /* Mantém o tamanho correto */
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    width: 20rem;
+    height: 100vh; /* Corrigido */
+    padding: 4rem;
+}
+
+.nav {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    background: var(--marinho-100);
+}
+
+.cover {
+    margin-bottom: 50px;
+    display: flex;
+    width: auto;
+    justify-content: center;
+}
+
+header a {
+    font-size: 15px;
+    line-height: 2.5rem;
+    text-decoration: none;
+}
+
+.btn {
+    display: flex;
+    justify-content: center;
+    padding: 0.70rem 5rem;
+    margin-top: 100%;
+    border: none;
+    border-radius: 12px;
+    background: #F76604;
+    cursor: pointer;
+}
