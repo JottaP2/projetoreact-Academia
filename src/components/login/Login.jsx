@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import styles from "./Login.module.css";
+import Swal from 'sweetalert2'
 
 function initialState() {
   return { user: "", password: "" };
@@ -10,6 +11,8 @@ export function Login() {
   const [values, setValues] = useState(initialState);
   const navigate = useNavigate();
 
+
+
   function onChange(evento) {
     const { name, value } = evento.target;
     setValues({
@@ -18,11 +21,24 @@ export function Login() {
     });
   }
 
+
   function handleSubmit(evento) {
     evento.preventDefault();
     if (values.user === "" || values.password === "") {
-      alert("Preencha os campos.");
+      
+      Swal.fire({
+        title: "Esqueceu do login e senha?",
+        text: "Digite os ambos para continuar",
+        icon: "error",
+        
+      });
+      
     } else {
+      Swal.fire({
+        title: "Login Concluído com Sucesso!",
+        icon: "success",
+        draggable: true
+      });
       navigate("/dashboard");
     }
   }
